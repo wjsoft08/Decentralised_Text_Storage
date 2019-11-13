@@ -14,7 +14,7 @@ const reducer = (state = [], action) => {
     case 'TOGGLE_SAVE_ASYNC':
       return state.map((text) =>
         (text.id === action.id)
-          ? {...text, saved: !text.saved, hash: action.hash}
+          ? { ...text, saved: !text.saved, hash: action.hash }
           : text
       )
     default:

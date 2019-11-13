@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <div class="container">
-          <AddText/>
-          <TextList/>
-        </div>
+        <AddText />
+        <TextList />
+      </div>
     );
   }
 }

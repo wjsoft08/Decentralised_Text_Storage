@@ -7,7 +7,7 @@ function* toggleSaveAsync(action) {
 
   let hash = "test"
   hash = yield ipfs.add(action.text.text)
-  hash = "https://ipfs.infura.io/ipfs/"+hash
+  hash = "https://ipfs.infura.io/ipfs/" + hash
   yield put({ type: "TOGGLE_SAVE_ASYNC", id: action.id, hash: hash });
 }
 
