@@ -11,8 +11,11 @@ const AddText = ({ dispatch }) => {
     return (
 
         <Card>
+            <Card.Header>
+            <Card.Title>Decentralised Text Storage</Card.Title>
+        </Card.Header>
+        <Card.Body>
             <div class="viewContainer">
-                <label class="form-label">Textarea</label>
                 <form class="formContainer" onSubmit={e => {
                     e.preventDefault()
                     if (!input.value.trim()) {
@@ -28,6 +31,7 @@ const AddText = ({ dispatch }) => {
             
                 </form>
             </div>
+            </Card.Body>
         </Card>
 
     )

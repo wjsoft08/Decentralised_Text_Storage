@@ -13,19 +13,19 @@ const ipfs = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' })
 class App extends Component {
 
 
-  componentDidMount() {
-    const data = "this is some text"
-    ipfs.add(data, (error, result) => {
-      if(error) {
-        console.error(error)
-        return
-      }
-      console.log(result)
-      console.log("https://ipfs.infura.io/ipfs/"+result)
-      console.log(result)
+  // componentDidMount() {
+  //   const data = "this is some data"
+  //   ipfs.add(data, (error, result) => {
+  //     if(error) {
+  //       console.error(error)
+  //       return
+  //     }
+  //     console.log(result)
+  //     console.log("https://ipfs.infura.io/ipfs/"+result)
+  //     console.log(result)
 
-    })
-  }
+  //   })
+  // }
 
   render() {
     return (

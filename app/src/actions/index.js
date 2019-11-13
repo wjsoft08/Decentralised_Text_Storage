@@ -3,7 +3,8 @@ let nextTextId = 0
 export const addText = text => ({
     type: 'ADD_TEXT',
     id: nextTextId++,
-    text
+    text,
+    hash: ''
 })
 
 export const toggleSave = id => ({

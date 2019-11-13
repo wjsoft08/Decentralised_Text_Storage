@@ -11,7 +11,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-    toggleSave: id => dispatch({ type: "TOGGLE_SAVE_UP", id: id })
+    toggleSave: (id, text) => dispatch({ type: "TOGGLE_SAVE_UP", id: id, text: text })
 })
 
 const TextList = ({ reducer, toggleSave }) => (
@@ -24,7 +24,7 @@ const TextList = ({ reducer, toggleSave }) => (
             <TextPreview
                 key={text.id}
                 {...text}
-                onClick={() => toggleSave(text.id)}
+                onClick={() => toggleSave(text.id, text)}
             />
         )}
         </Card.Body>
