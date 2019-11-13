@@ -7,7 +7,26 @@ import TextList from "./containers/TextList"
 import { connect } from "react-redux";
 import { addText } from "./actions"
 
+const IPFS = require('ipfs-mini');
+const ipfs = new IPFS({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' });
+
 class App extends Component {
+
+
+  componentDidMount() {
+    const data = "this is some text"
+    ipfs.add(data, (error, result) => {
+      if(error) {
+        console.error(error)
+        return
+      }
+      console.log(result)
+      console.log("https://ipfs.infura.io/ipfs/"+result)
+      console.log(result)
+
+    })
+  }
+
   render() {
     return (
       <div class="container">

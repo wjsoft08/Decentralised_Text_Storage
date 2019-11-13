@@ -9,6 +9,8 @@
     "formik": "^1.0.2",
     "history": "^4.7.2",
     "immutability-helper": "^2.7.1",
+    "ipfs-http-client": "^39.0.2",
+    "ipfs-mini": "^1.1.5",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-c3js": "^0.1.20",
