@@ -61,6 +61,12 @@ div.viewContainer {
   align-items: center;
 }
 
+div.myTextInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 div.TextPreviewContainer{
   display: flex;

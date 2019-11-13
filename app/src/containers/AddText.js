@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import { addText } from '../actions'
 import "../Custom.css"
-import { Page, Grid, Card, Button } from "tabler-react";
+import { Card } from "tabler-react";
 
 
 const AddText = ({ dispatch }) => {

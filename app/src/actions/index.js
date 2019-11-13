@@ -7,7 +7,8 @@ export const addText = text => ({
     hash: ''
 })
 
-export const toggleSave = id => ({
+export const toggleSave = (id, hash) => ({
     type: 'TOGGLE_SAVE_ASYNC',
-    id
+    id,
+    hash
 })
